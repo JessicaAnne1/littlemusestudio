@@ -52,8 +52,8 @@ const Index = () => {
               Where curiosity meets beauty
             </h1>
             <p className="font-body text-base text-muted-foreground leading-relaxed mb-8 max-w-md">
-              Curated Montessori &amp; sensory products designed for babies and under-fives. 
-              Soft, safe, and thoughtfully chosen.
+              A curated collection of play essentials, resources, and guides for 
+              families who value slow living, purposeful play, and intentional parenting.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
