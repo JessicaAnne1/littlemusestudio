@@ -52,9 +52,6 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <p className="font-body text-[11px] text-muted-foreground/70 text-center mt-4">
-            As an Amazon Associate I earn from qualifying purchases.
-          </p>
         </div>
       </div>
     </footer>
