@@ -114,9 +114,10 @@ const Index = () => {
             Play with purpose
           </h2>
           <p className="font-body text-base text-muted-foreground leading-relaxed mb-8">
-            At Little Muse Studio, we believe that the first five years shape everything. 
-            Every product we curate supports sensory development, creativity, and the 
-            joy of discovery — wrapped in an aesthetic that brings calm to your home.
+            At Little Muse Studio, we believe the first five years shape everything. 
+            We curate play essentials and create resources — guides, stories, and 
+            printables — that support sensory development, creativity, and the joy 
+            of discovery, all wrapped in an aesthetic that brings calm to your home.
           </p>
           <Link
             to="/blog"
