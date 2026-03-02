@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import Blog from "./pages/Blog";
 import Shop from "./pages/Shop";
 import ProductDetail from "./pages/ProductDetail";
+import AffiliateDisclosure from "./pages/AffiliateDisclosure";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +22,8 @@ const AppContent = () => {
       <Route path="/blog" element={<Blog />} />
       <Route path="/shop" element={<Shop />} />
       <Route path="/product/:handle" element={<ProductDetail />} />
+      <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

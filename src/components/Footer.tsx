@@ -38,9 +38,22 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-border text-center">
-          <p className="font-body text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Little Muse Studio. All rights reserved.
+        <div className="mt-10 pt-6 border-t border-border">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="font-body text-xs text-muted-foreground">
+              © {new Date().getFullYear()} Little Muse Studio. All rights reserved.
+            </p>
+            <div className="flex items-center gap-4">
+              <Link to="/privacy-policy" className="font-body text-xs text-muted-foreground hover:text-primary transition-colors">
+                Privacy Policy
+              </Link>
+              <Link to="/affiliate-disclosure" className="font-body text-xs text-muted-foreground hover:text-primary transition-colors">
+                Affiliate Disclosure
+              </Link>
+            </div>
+          </div>
+          <p className="font-body text-[11px] text-muted-foreground/70 text-center mt-4">
+            As an Amazon Associate I earn from qualifying purchases.
           </p>
         </div>
       </div>
