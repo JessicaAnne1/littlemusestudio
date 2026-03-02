@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-image.jpg";
 import { Link } from "react-router-dom";
-import { ArrowRight, Leaf, Heart, Star } from "lucide-react";
+import { ArrowRight, Leaf, Heart, Star, BookOpen } from "lucide-react";
 
 const categories = [
   {
@@ -21,6 +21,12 @@ const categories = [
     description: "Soft, safe, and beautifully crafted everyday items.",
     icon: Heart,
     color: "bg-accent",
+  },
+  {
+    title: "Resources",
+    description: "Guides, stories, and printables for intentional family life.",
+    icon: BookOpen,
+    color: "bg-muted",
   },
 ];
 
@@ -46,8 +52,8 @@ const Index = () => {
               Where curiosity meets beauty
             </h1>
             <p className="font-body text-base text-muted-foreground leading-relaxed mb-8 max-w-md">
-              Curated Montessori &amp; sensory products designed for babies and under-fives. 
-              Soft, safe, and thoughtfully chosen.
+              A curated collection of play essentials, resources, and guides for 
+              families who value slow living, purposeful play, and intentional parenting.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -77,7 +83,7 @@ const Index = () => {
             Explore our collections
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((cat, i) => (
             <div
               key={cat.title}
@@ -108,9 +114,10 @@ const Index = () => {
             Play with purpose
           </h2>
           <p className="font-body text-base text-muted-foreground leading-relaxed mb-8">
-            At Little Muse Studio, we believe that the first five years shape everything. 
-            Every product we curate supports sensory development, creativity, and the 
-            joy of discovery — wrapped in an aesthetic that brings calm to your home.
+            At Little Muse Studio, we believe the first five years shape everything. 
+            We curate play essentials and create resources — guides, stories, and 
+            printables — that support sensory development, creativity, and the joy 
+            of discovery, all wrapped in an aesthetic that brings calm to your home.
           </p>
           <Link
             to="/blog"
