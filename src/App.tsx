@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import Blog from "./pages/Blog";
 import Shop from "./pages/Shop";
 import ProductDetail from "./pages/ProductDetail";
+import AffiliateDisclosure from "./pages/AffiliateDisclosure";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
