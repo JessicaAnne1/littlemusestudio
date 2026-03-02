@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-image.jpg";
 import { Link } from "react-router-dom";
-import { ArrowRight, Leaf, Heart, Star } from "lucide-react";
+import { ArrowRight, Leaf, Heart, Star, BookOpen } from "lucide-react";
 
 const categories = [
   {
