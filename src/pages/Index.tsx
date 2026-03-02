@@ -22,6 +22,12 @@ const categories = [
     icon: Heart,
     color: "bg-accent",
   },
+  {
+    title: "Resources",
+    description: "Guides, stories, and printables for intentional family life.",
+    icon: BookOpen,
+    color: "bg-muted",
+  },
 ];
 
 const Index = () => {
