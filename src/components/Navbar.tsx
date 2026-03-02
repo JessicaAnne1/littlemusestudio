@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { CartDrawer } from "@/components/CartDrawer";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -34,19 +35,22 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
+          <CartDrawer />
         </div>
 
-        {/* Mobile toggle */}
-        <button
-          className="md:hidden text-foreground"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
-        >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile */}
+        <div className="flex md:hidden items-center gap-4">
+          <CartDrawer />
+          <button
+            className="text-foreground"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
-      {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden bg-background border-b border-border animate-fade-in">
           <div className="flex flex-col items-center gap-4 py-6">
