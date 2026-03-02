@@ -22,6 +22,8 @@ const AppContent = () => {
       <Route path="/blog" element={<Blog />} />
       <Route path="/shop" element={<Shop />} />
       <Route path="/product/:handle" element={<ProductDetail />} />
+      <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
