@@ -109,7 +109,7 @@ const Index = () => {
       </section>
 
       {/* About strip */}
-      <section className="bg-card">
+      <section className="bg-sand">
         <div className="container mx-auto px-6 py-20 text-center max-w-2xl">
           <p className="font-body text-xs uppercase tracking-[0.25em] text-primary mb-3">
             Our Philosophy

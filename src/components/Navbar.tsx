@@ -53,7 +53,7 @@ const Navbar = () => {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-background border-b border-border animate-fade-in">
+        <div className="md:hidden bg-background animate-fade-in">
           <div className="flex flex-col items-center gap-4 py-6">
             {navLinks.map((link) => (
               <Link
