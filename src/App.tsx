@@ -11,6 +11,7 @@ import BlogPost from "./pages/BlogPost";
 import Shop from "./pages/Shop";
 import ProductDetail from "./pages/ProductDetail";
 import MeetTheFounder from "./pages/MeetTheFounder";
+import Coaching from "./pages/Coaching";
 import AffiliateDisclosure from "./pages/AffiliateDisclosure";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import AdminLogin from "./pages/AdminLogin";
