@@ -132,7 +132,7 @@ const Index = () => {
       <section className="container mx-auto px-6 py-20">
         <div className="bg-eucalyptus-light rounded-2xl p-10 md:p-14 text-center max-w-2xl mx-auto">
           <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-3">
-            Join the Little Muse community
+            Join the Little Muse Community
           </h2>
           <p className="font-body text-sm text-muted-foreground mb-6">
             Get curated play ideas, new product drops &amp; journal entries straight to your inbox.
