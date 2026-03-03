@@ -34,6 +34,7 @@ const AppContent = () => {
       <Route path="/shop" element={<Shop />} />
       <Route path="/product/:handle" element={<ProductDetail />} />
       <Route path="/meet-the-founder" element={<MeetTheFounder />} />
+      <Route path="/coaching" element={<Coaching />} />
       <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/admin/login" element={<AdminLogin />} />
