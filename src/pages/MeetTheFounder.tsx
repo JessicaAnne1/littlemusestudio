@@ -130,10 +130,10 @@ const MeetTheFounder = () => {
 
             <p className="font-medium text-foreground">
               Whether you're here for beautifully curated products, downloadable
-              resources, enrichment activities, or tools to support your
-              intentional parenting journey — everything in this space has been
-              thoughtfully selected to help you on your way. I'm so glad
-              you're here.
+              resources, enrichment activities, coaching support, or tools to
+              support your intentional parenting journey — everything in this
+              space has been thoughtfully selected to help you on your way. I'm
+              so glad you're here.
             </p>
           </div>
 
