@@ -75,7 +75,8 @@ const MeetTheFounder = () => {
             </h2>
 
             <p>
-              I hold certifications across a broad range of disciplines that
+              Outside of my professional degrees and training, I hold
+              certifications across a broad range of disciplines that
               inform the resources and products I create:
             </p>
 
