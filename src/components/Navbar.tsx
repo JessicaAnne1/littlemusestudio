@@ -5,9 +5,9 @@ import { CartDrawer } from "@/components/CartDrawer";
 
 const navLinks = [
   { to: "/", label: "Home" },
-  { to: "/shop", label: "Shop" },
-  { to: "/blog", label: "Journal" },
   { to: "/meet-the-founder", label: "Meet The Founder" },
+  { to: "/blog", label: "Journal" },
+  { to: "/shop", label: "Shop" },
 ];
 
 const Navbar = () => {

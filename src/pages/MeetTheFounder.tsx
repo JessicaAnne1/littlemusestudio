@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import founderPhoto from "@/assets/founder-photo.jpg";
 
 const MeetTheFounder = () => {
   return (
@@ -16,31 +17,115 @@ const MeetTheFounder = () => {
 
       <section className="container mx-auto px-6 pb-20">
         <div className="max-w-3xl mx-auto">
-          {/* Placeholder for founder image */}
-          <div className="bg-secondary rounded-2xl h-80 flex items-center justify-center mb-10">
-            <span className="font-display text-6xl text-foreground/10 select-none">✦</span>
+          {/* Founder photo */}
+          <div className="rounded-2xl overflow-hidden mb-10">
+            <img
+              src={founderPhoto}
+              alt="Jessica O'Donnell — founder of Little Muse Studio"
+              className="w-full h-auto object-cover rounded-2xl"
+            />
           </div>
 
           <div className="space-y-6 font-body text-base text-muted-foreground leading-relaxed">
             <p>
-              Welcome to Little Muse Studio — a space born from the belief that the 
+              Welcome to Little Muse Studio — a space born from the belief that the
               earliest years of childhood are worthy of beauty, intention, and care.
             </p>
+
             <p>
-              As a mother, author, and family coach, I created this studio to bring 
-              together everything I'm passionate about: purposeful play, thoughtful 
-              resources, and the kind of gentle guidance that helps families thrive 
-              — not just survive.
+              I'm Jessica — a strategist and crisis manager by trade, but a mother
+              first and always. My career has taken me through boardrooms and
+              high-pressure situations, working with large-scale clients on
+              everything from business strategy and organisational frameworks to
+              guiding executives and organisations through significant crises. I'm
+              also the founder of IntraWork, a management consulting firm, and hold
+              a personal brand focused on executive leadership coaching in crisis
+              management.
             </p>
+
             <p>
-              Whether you're here for our curated play essentials, looking for 
-              coaching support around family planning and routines, or simply 
-              seeking inspiration for a slower, more intentional family life — 
-              you're in the right place.
+              But beyond anything and everything else, I am a mum — and intentional
+              parenting sits at the very centre of who I am.
             </p>
+
+            <h2 className="font-display text-2xl font-semibold text-foreground pt-4">
+              Where Strategy Meets Heart
+            </h2>
+
+            <p>
+              A significant amount of my lived experience comes from raising a
+              beautiful neurodivergent child who is now 21 and thriving. That
+              journey — along with years of professional training — shaped my
+              deep commitment to supporting families with compassion, structure,
+              and understanding.
+            </p>
+
+            <p>
+              I bring a unique blend of high-level business strategy and
+              deeply personal family coaching. My background in frameworks,
+              implementation, and navigating complexity allows me to help
+              families approach their home life with the same intentionality
+              and clarity that drives successful organisations — only with a
+              whole lot more warmth, patience, and heart.
+            </p>
+
+            <h2 className="font-display text-2xl font-semibold text-foreground pt-4">
+              Certifications &amp; Training
+            </h2>
+
+            <p>
+              I hold certifications across a broad range of disciplines that
+              inform my coaching and the resources I create:
+            </p>
+
+            <ul className="list-disc list-inside space-y-1.5 pl-2">
+              <li>Certified Life Coach</li>
+              <li>Certified Neuroscience Coach</li>
+              <li>Certified Positive Psychology Coach</li>
+              <li>Certified ADHD Coach</li>
+              <li>Certified Autism Coach</li>
+              <li>Certified Positive Parenting Coach</li>
+              <li>Certified Therapeutic Arts &amp; Art Life Coach</li>
+              <li>International Practitioner of Holistic Medicine</li>
+              <li>Complementary Medicine Association</li>
+              <li>Centre of Excellence</li>
+              <li>Currently undertaking International Coaches Federation (ICF) certification</li>
+            </ul>
+
+            <h2 className="font-display text-2xl font-semibold text-foreground pt-4">
+              What Drives This Work
+            </h2>
+
+            <p>
+              Intentional parenting, to me, means creating supportive frameworks
+              for emotional regulation, purposeful play, and understanding each
+              child's uniqueness — then encouraging that to flow and flourish
+              through different ways of living and learning.
+            </p>
+
+            <p>
+              I'm currently authoring my first book, centred on what I call the
+              <span className="italic"> Safe Contained Method</span> — an approach
+              to understanding boundaries within intentional parenting. Alongside
+              the book, I offer personal and family coaching sessions designed to
+              help you uncover the strategy that underpins the cornerstone of your
+              family: how you plan, how you support one another, and how your
+              family operates within your home.
+            </p>
+
+            <p>
+              The goal is always the same — a wonderful, open, thriving family
+              unit that supports strong emotional regulation, emotional awareness,
+              frustration tolerance, and allows every emotion to be felt and
+              navigated in a safe, contained way. A space where children learn,
+              develop, and thrive through the methods that work best for them.
+            </p>
+
             <p className="font-medium text-foreground">
-              More coming soon — including coaching resources, my book, and guided 
-              programmes designed to help families build strong foundations.
+              Whether you're here for beautifully curated products and resources to
+              support your intentional parenting journey, or you're looking for
+              personal and family coaching to shape and guide your family with ease,
+              steadiness, calm, and predictability — I'm so glad you're here.
             </p>
           </div>
 
