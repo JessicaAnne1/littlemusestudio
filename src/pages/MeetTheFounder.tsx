@@ -139,16 +139,16 @@ const MeetTheFounder = () => {
 
           <div className="mt-12 flex flex-wrap gap-4">
             <Link
-              to="/shop"
+              to="/coaching"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-body text-sm font-medium hover:opacity-90 transition-opacity"
             >
-              Explore The Shop <ArrowRight size={16} />
+              Explore Coaching <ArrowRight size={16} />
             </Link>
             <Link
-              to="/blog"
+              to="/shop"
               className="inline-flex items-center gap-2 bg-card text-foreground px-6 py-3 rounded-full font-body text-sm font-medium hover:bg-muted transition-colors"
             >
-              Read The Journal
+              Browse The Shop
             </Link>
           </div>
         </div>
