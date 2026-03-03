@@ -39,9 +39,10 @@ const MeetTheFounder = () => {
                 frameworks to guiding executives and organisations through
                 significant crises. I'm also the founder of IntraWork, a management
                 consulting firm, and work under my own name in executive leadership
-                coaching within the crisis management space.
-              </p>
-              <p>
+                coaching within the crisis management space. Alongside this,
+                I offer coaching for parents, families, and individuals through
+                Little Muse Studio — bringing together strategy, lived experience,
+                and heart.
                 But beyond anything and everything else, I am a mum — and intentional
                 parenting sits at the very centre of who I am.
               </p>
@@ -129,25 +130,25 @@ const MeetTheFounder = () => {
 
             <p className="font-medium text-foreground">
               Whether you're here for beautifully curated products, downloadable
-              resources, enrichment activities, or tools to support your
-              intentional parenting journey — everything in this space has been
-              thoughtfully selected to help you on your way. I'm so glad
-              you're here.
+              resources, enrichment activities, coaching support, or tools to
+              support your intentional parenting journey — everything in this
+              space has been thoughtfully selected to help you on your way. I'm
+              so glad you're here.
             </p>
           </div>
 
           <div className="mt-12 flex flex-wrap gap-4">
             <Link
-              to="/shop"
+              to="/coaching"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-body text-sm font-medium hover:opacity-90 transition-opacity"
             >
-              Explore The Shop <ArrowRight size={16} />
+              Explore Coaching <ArrowRight size={16} />
             </Link>
             <Link
-              to="/blog"
+              to="/shop"
               className="inline-flex items-center gap-2 bg-card text-foreground px-6 py-3 rounded-full font-body text-sm font-medium hover:bg-muted transition-colors"
             >
-              Read The Journal
+              Browse The Shop
             </Link>
           </div>
         </div>
