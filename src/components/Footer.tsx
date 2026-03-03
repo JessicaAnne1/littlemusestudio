@@ -33,9 +33,8 @@ const Footer = () => {
               Connect
             </h4>
             <div className="flex flex-col gap-2">
-              <a href="#" className="font-body text-sm text-foreground hover:text-primary transition-colors">Pinterest</a>
-              <a href="#" className="font-body text-sm text-foreground hover:text-primary transition-colors">Instagram</a>
-              <a href="mailto:hello@littlemusestudio.com" className="font-body text-sm text-foreground hover:text-primary transition-colors">hello@littlemusestudio.com</a>
+              <a href="https://au.pinterest.com/littlemusestudio_au/" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-foreground hover:text-primary transition-colors">Pinterest</a>
+              <a href="https://www.instagram.com/little.muse.studio.au/" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-foreground hover:text-primary transition-colors">Instagram</a>
             </div>
           </div>
         </div>
