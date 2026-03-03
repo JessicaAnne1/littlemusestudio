@@ -91,10 +91,10 @@ const Index = () => {
           {categories.map((cat, i) => (
             <div
               key={cat.title}
-              className={`${cat.color} rounded-2xl p-8 text-center group hover:shadow-lg transition-shadow duration-300`}
+              className={`${cat.bgClass} rounded-2xl p-8 text-center group hover:shadow-lg transition-shadow duration-300`}
               style={{ animationDelay: `${i * 0.15}s` }}
             >
-              <div className="mx-auto w-14 h-14 rounded-full bg-background/60 flex items-center justify-center mb-5">
+              <div className={`mx-auto w-14 h-14 rounded-full ${cat.iconBgClass} flex items-center justify-center mb-5`}>
                 <cat.icon size={24} className="text-primary" />
               </div>
               <h3 className="font-display text-xl font-semibold text-foreground mb-2">
