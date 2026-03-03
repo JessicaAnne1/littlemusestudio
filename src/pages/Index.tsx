@@ -8,25 +8,29 @@ const categories = [
     title: "Sensory Play",
     description: "Textured toys and discovery items for curious little hands.",
     icon: Star,
-    color: "bg-secondary",
+    bgClass: "bg-secondary",
+    iconBgClass: "bg-secondary/40",
   },
   {
     title: "Montessori",
     description: "Thoughtfully designed learning tools for independent play.",
     icon: Leaf,
-    color: "bg-eucalyptus-light",
+    bgClass: "bg-primary/30",
+    iconBgClass: "bg-primary/20",
   },
   {
     title: "Baby Essentials",
     description: "Soft, safe, and beautifully crafted everyday items.",
     icon: Heart,
-    color: "bg-accent",
+    bgClass: "bg-accent",
+    iconBgClass: "bg-accent/40",
   },
   {
     title: "Resources",
     description: "Guides, stories, and printables for intentional family life.",
     icon: BookOpen,
-    color: "bg-muted",
+    bgClass: "bg-card",
+    iconBgClass: "bg-card/60",
   },
 ];
 
@@ -40,6 +44,7 @@ const Index = () => {
             src={heroImage}
             alt="Curated baby sensory toys on linen"
             className="w-full h-full object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent" />
         </div>
@@ -64,7 +69,7 @@ const Index = () => {
               </Link>
               <Link
                 to="/blog"
-                className="inline-flex items-center gap-2 bg-card text-foreground px-6 py-3 rounded-full font-body text-sm font-medium border border-border hover:bg-muted transition-colors"
+                className="inline-flex items-center gap-2 bg-card text-foreground px-6 py-3 rounded-full font-body text-sm font-medium hover:bg-muted transition-colors"
               >
                 Read the Journal
               </Link>
@@ -87,10 +92,10 @@ const Index = () => {
           {categories.map((cat, i) => (
             <div
               key={cat.title}
-              className={`${cat.color} rounded-2xl p-8 text-center group hover:shadow-lg transition-shadow duration-300`}
+              className={`${cat.bgClass} rounded-2xl p-8 text-center group hover:shadow-lg transition-shadow duration-300`}
               style={{ animationDelay: `${i * 0.15}s` }}
             >
-              <div className="mx-auto w-14 h-14 rounded-full bg-background/60 flex items-center justify-center mb-5">
+              <div className={`mx-auto w-14 h-14 rounded-full ${cat.iconBgClass} flex items-center justify-center mb-5`}>
                 <cat.icon size={24} className="text-primary" />
               </div>
               <h3 className="font-display text-xl font-semibold text-foreground mb-2">
@@ -105,7 +110,7 @@ const Index = () => {
       </section>
 
       {/* About strip */}
-      <section className="bg-card">
+      <section className="bg-sand">
         <div className="container mx-auto px-6 py-20 text-center max-w-2xl">
           <p className="font-body text-xs uppercase tracking-[0.25em] text-primary mb-3">
             Our Philosophy

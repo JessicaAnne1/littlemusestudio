@@ -6,19 +6,19 @@
 
 @layer base {
   :root {
-    --background: 35 27% 93%;
+    --background: 36 33% 96%;
     --foreground: 22 17% 37%;
 
     --card: 31 33% 85%;
     --card-foreground: 22 17% 37%;
 
-    --popover: 35 27% 93%;
+    --popover: 36 33% 96%;
     --popover-foreground: 22 17% 37%;
 
     --primary: 111 11% 68%;
     --primary-foreground: 22 17% 37%;
 
-    --secondary: 5 37% 74%;
+    --secondary: 3 49% 84%;
     --secondary-foreground: 22 17% 37%;
 
     --muted: 31 33% 85%;
@@ -46,10 +46,10 @@
     --sidebar-ring: 111 11% 68%;
 
     /* Brand tokens */
-    --warm-cream: 35 27% 93%;
+    --warm-cream: 36 33% 96%;
     --sand: 31 33% 85%;
     --tan: 30 24% 76%;
-    --dusty-rose: 5 37% 74%;
+    --dusty-rose: 3 49% 84%;
     --sage: 111 11% 68%;
     --sky-pastel: 206 22% 77%;
     --warm-brown: 19 28% 60%;
