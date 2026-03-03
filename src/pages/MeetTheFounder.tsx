@@ -39,9 +39,10 @@ const MeetTheFounder = () => {
                 frameworks to guiding executives and organisations through
                 significant crises. I'm also the founder of IntraWork, a management
                 consulting firm, and work under my own name in executive leadership
-                coaching within the crisis management space.
-              </p>
-              <p>
+                coaching within the crisis management space. Alongside this,
+                I offer coaching for parents, families, and individuals through
+                Little Muse Studio — bringing together strategy, lived experience,
+                and heart.
                 But beyond anything and everything else, I am a mum — and intentional
                 parenting sits at the very centre of who I am.
               </p>
