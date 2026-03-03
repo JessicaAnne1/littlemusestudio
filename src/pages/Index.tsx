@@ -64,7 +64,7 @@ const Index = () => {
               </Link>
               <Link
                 to="/blog"
-                className="inline-flex items-center gap-2 bg-card text-foreground px-6 py-3 rounded-full font-body text-sm font-medium border border-border hover:bg-muted transition-colors"
+                className="inline-flex items-center gap-2 bg-card text-foreground px-6 py-3 rounded-full font-body text-sm font-medium hover:bg-muted transition-colors"
               >
                 Read the Journal
               </Link>
