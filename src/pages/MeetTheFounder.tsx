@@ -32,14 +32,14 @@ const MeetTheFounder = () => {
                 earliest years of childhood are worthy of beauty, intention, and care.
               </p>
               <p>
-                I'm Jessica — a strategist and crisis manager by trade, but a mother
-                first and always. My career has taken me through boardrooms and
-                high-pressure situations, working with large-scale clients on
-                everything from business strategy and organisational frameworks to
-                guiding executives and organisations through significant crises. I'm
-                also the founder of IntraWork, a management consulting firm, and hold
-                a personal brand focused on executive leadership coaching in crisis
-                management.
+                I'm Jessica O'Donnell — a strategist and crisis manager by trade,
+                but a mother first and always. My career has taken me through
+                boardrooms and high-pressure situations, working with large-scale
+                clients on everything from business strategy and organisational
+                frameworks to guiding executives and organisations through
+                significant crises. I'm also the founder of IntraWork, a management
+                consulting firm, and work under my own name in executive leadership
+                coaching within the crisis management space.
               </p>
               <p>
                 But beyond anything and everything else, I am a mum — and intentional
@@ -75,7 +75,8 @@ const MeetTheFounder = () => {
             </h2>
 
             <p>
-              I hold certifications across a broad range of disciplines that
+              Outside of my professional degrees and training, I hold
+              certifications across a broad range of disciplines that
               inform the resources and products I create:
             </p>
 
