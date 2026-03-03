@@ -111,7 +111,7 @@ const Index = () => {
             Our Philosophy
           </p>
           <h2 className="font-display text-3xl font-semibold text-foreground mb-6">
-            Play with purpose
+            Play With Purpose
           </h2>
           <p className="font-body text-base text-muted-foreground leading-relaxed mb-8">
             At Little Muse Studio, we believe the first five years shape everything. 
