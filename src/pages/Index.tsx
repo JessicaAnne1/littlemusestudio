@@ -8,25 +8,29 @@ const categories = [
     title: "Sensory Play",
     description: "Textured toys and discovery items for curious little hands.",
     icon: Star,
-    color: "bg-secondary",
+    bgClass: "bg-secondary",
+    iconBgClass: "bg-secondary/40",
   },
   {
     title: "Montessori",
     description: "Thoughtfully designed learning tools for independent play.",
     icon: Leaf,
-    color: "bg-eucalyptus-light",
+    bgClass: "bg-primary/30",
+    iconBgClass: "bg-primary/20",
   },
   {
     title: "Baby Essentials",
     description: "Soft, safe, and beautifully crafted everyday items.",
     icon: Heart,
-    color: "bg-accent",
+    bgClass: "bg-accent",
+    iconBgClass: "bg-accent/40",
   },
   {
     title: "Resources",
     description: "Guides, stories, and printables for intentional family life.",
     icon: BookOpen,
-    color: "bg-muted",
+    bgClass: "bg-card",
+    iconBgClass: "bg-card/60",
   },
 ];
 
