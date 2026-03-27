@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-image.jpg";
 import { Link } from "react-router-dom";
 import { ArrowRight, Leaf, Heart, Star, BookOpen } from "lucide-react";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 const categories = [
   {
@@ -142,22 +143,7 @@ const Index = () => {
           <p className="font-body text-sm text-muted-foreground mb-6">
             Get curated play ideas, new product drops &amp; journal entries straight to your inbox.
           </p>
-          <form
-            onSubmit={(e) => e.preventDefault()}
-            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-          >
-            <input
-              type="email"
-              placeholder="Your email address"
-              className="flex-1 bg-background border border-border rounded-full px-5 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-            />
-            <button
-              type="submit"
-              className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-body text-sm font-medium hover:opacity-90 transition-opacity"
-            >
-              Subscribe
-            </button>
-          </form>
+          <NewsletterSignup />
         </div>
       </section>
     </Layout>

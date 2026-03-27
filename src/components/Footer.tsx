@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-display text-xl font-semibold text-foreground mb-3">
               Little Muse Studio
@@ -36,6 +37,13 @@ const Footer = () => {
               <a href="https://au.pinterest.com/littlemusestudio_au/" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-foreground hover:text-primary transition-colors">Pinterest</a>
               <a href="https://www.instagram.com/little.muse.studio.au/" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-foreground hover:text-primary transition-colors">Instagram</a>
             </div>
+          </div>
+
+          <div>
+            <h4 className="font-body text-xs uppercase tracking-widest text-muted-foreground mb-4">
+              Stay in the Loop
+            </h4>
+            <NewsletterSignup compact />
           </div>
         </div>
 
