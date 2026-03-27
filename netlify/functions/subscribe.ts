@@ -41,6 +41,10 @@ export const handler: Handler = async (event) => {
 
   const kitData = await kitResponse.json().catch(() => ({}));
 
+  if (!kitResponse.ok) {
+    console.error("[Kit] subscription failed — status:", kitResponse.status, "body:", JSON.stringify(kitData));
+  }
+
   return {
     statusCode: kitResponse.status,
     headers: { "Content-Type": "application/json" },
