@@ -1,8 +1,8 @@
+import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-image.jpg";
 import { Link } from "react-router-dom";
 import { ArrowRight, Leaf, Heart, Star, BookOpen } from "lucide-react";
-import NewsletterSignup from "@/components/NewsletterSignup";
 
 const categories = [
   {
@@ -35,7 +35,38 @@ const categories = [
   },
 ];
 
+const KIT_DATA_UID = "d54a7dd261";
+const KIT_SCRIPT_URL = "https://f.convertkit.com/ckjs/ck.5.js";
+const KIT_FORM_HTML = `
+<form action="https://app.kit.com/forms/9254149/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="9254149" data-uid="d54a7dd261" data-format="inline" data-version="5">
+  <div data-style="clean">
+    <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+    <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+      <div class="formkit-field">
+        <input class="formkit-input" name="first_name" aria-label="First Name" placeholder="First Name" type="text">
+      </div>
+      <div class="formkit-field">
+        <input class="formkit-input" name="email_address" aria-label="Email Address" placeholder="Email Address" required type="email">
+      </div>
+      <button data-element="submit" class="formkit-submit formkit-submit">
+        <div class="formkit-spinner"><div></div><div></div><div></div></div>
+        <span>Subscribe</span>
+      </button>
+    </div>
+  </div>
+</form>
+`;
+
 const Index = () => {
+  useEffect(() => {
+    if (document.querySelector(`script[data-uid="${KIT_DATA_UID}"]`)) return;
+    const script = document.createElement("script");
+    script.src = KIT_SCRIPT_URL;
+    script.async = true;
+    script.setAttribute("data-uid", KIT_DATA_UID);
+    document.head.appendChild(script);
+  }, []);
+
   return (
     <Layout>
       {/* Hero */}
@@ -143,7 +174,7 @@ const Index = () => {
           <p className="font-body text-sm text-muted-foreground mb-6">
             Get curated play ideas, new product drops &amp; journal entries straight to your inbox.
           </p>
-          <NewsletterSignup />
+          <div dangerouslySetInnerHTML={{ __html: KIT_FORM_HTML }} />
         </div>
       </section>
     </Layout>

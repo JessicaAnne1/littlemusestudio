@@ -1,5 +1,21 @@
 import { Link } from "react-router-dom";
-import NewsletterSignup from "@/components/NewsletterSignup";
+
+const KIT_FOOTER_FORM_HTML = `
+<form action="https://app.kit.com/forms/9254149/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="9254149" data-uid="d54a7dd261" data-format="inline" data-version="5">
+  <div data-style="clean">
+    <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+    <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+      <div class="formkit-field">
+        <input class="formkit-input" name="email_address" aria-label="Email Address" placeholder="Email Address" required type="email">
+      </div>
+      <button data-element="submit" class="formkit-submit formkit-submit">
+        <div class="formkit-spinner"><div></div><div></div><div></div></div>
+        <span>Subscribe</span>
+      </button>
+    </div>
+  </div>
+</form>
+`;
 
 const Footer = () => {
   return (
@@ -43,7 +59,7 @@ const Footer = () => {
             <h4 className="font-body text-xs uppercase tracking-widest text-muted-foreground mb-4">
               Stay in the Loop
             </h4>
-            <NewsletterSignup compact />
+            <div dangerouslySetInnerHTML={{ __html: KIT_FOOTER_FORM_HTML }} />
           </div>
         </div>
 
