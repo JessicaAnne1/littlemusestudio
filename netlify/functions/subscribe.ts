@@ -27,7 +27,7 @@ export const handler: Handler = async (event) => {
     return { statusCode: 500, body: JSON.stringify({ message: "Server misconfiguration: missing API key." }) };
   }
 
-  const kitBody: Record<string, string> = { email, api_key: apiKey };
+  const kitBody: Record<string, string> = { email, api_secret: apiKey };
   if (firstName) kitBody.first_name = firstName;
 
   const kitResponse = await fetch(
