@@ -84,7 +84,7 @@ const Shop = () => {
                   className="group bg-card rounded-2xl overflow-hidden border border-border hover:shadow-lg transition-shadow duration-300 animate-fade-in"
                   style={{ animationDelay: `${i * 0.08}s` }}
                 >
-                  <div className="bg-secondary/30 h-56 flex items-center justify-center relative overflow-hidden">
+                  <div className="aspect-square flex items-center justify-center relative overflow-hidden" style={{ backgroundColor: '#FAF7F2' }}>
                     {image ? (
                       <img
                         src={image.url}
