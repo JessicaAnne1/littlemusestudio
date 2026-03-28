@@ -4,9 +4,15 @@ async function subscribeToKit(email: string, firstName?: string): Promise<void> 
   const body: Record<string, string> = { email };
   if (firstName) body.first_name = firstName;
 
-  const response = await fetch("/api/subscribe", {
+  const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+  const supabaseKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+
+  const response = await fetch(`${supabaseUrl}/functions/v1/subscribe`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${supabaseKey}`,
+    },
     body: JSON.stringify(body),
   });
 
