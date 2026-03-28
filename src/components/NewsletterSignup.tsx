@@ -4,15 +4,9 @@ async function subscribeToKit(email: string, firstName?: string): Promise<void> 
   const body: Record<string, string> = { email };
   if (firstName) body.first_name = firstName;
 
-  const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-  const supabaseKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
-
-  const response = await fetch(`${supabaseUrl}/functions/v1/subscribe`, {
+  const response = await fetch("/.netlify/functions/subscribe", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Authorization": `Bearer ${supabaseKey}`,
-    },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),
   });
 
