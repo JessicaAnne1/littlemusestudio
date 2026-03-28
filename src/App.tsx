@@ -21,6 +21,13 @@ import BlogPostsList from "./pages/admin/BlogPostsList";
 import BlogPostEditor from "./pages/admin/BlogPostEditor";
 import CategoriesManager from "./pages/admin/CategoriesManager";
 import TagsManager from "./pages/admin/TagsManager";
+import ParentingWithBoundaries from "./pages/coaching/ParentingWithBoundaries";
+import IntentionalParenting from "./pages/coaching/IntentionalParenting";
+import NeurodivergentFamilySupport from "./pages/coaching/NeurodivergentFamilySupport";
+import FamilyVisionPlanning from "./pages/coaching/FamilyVisionPlanning";
+import IndependentPlayDevelopment from "./pages/coaching/IndependentPlayDevelopment";
+import BehaviourEmotionalRegulation from "./pages/coaching/BehaviourEmotionalRegulation";
+import ParentalBurnoutReset from "./pages/coaching/ParentalBurnoutReset";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +43,13 @@ const AppContent = () => {
       <Route path="/product/:handle" element={<ProductDetail />} />
       <Route path="/meet-the-founder" element={<MeetTheFounder />} />
       <Route path="/coaching" element={<Coaching />} />
+      <Route path="/coaching/parenting-with-boundaries" element={<ParentingWithBoundaries />} />
+      <Route path="/coaching/intentional-parenting" element={<IntentionalParenting />} />
+      <Route path="/coaching/neurodivergent-family-support" element={<NeurodivergentFamilySupport />} />
+      <Route path="/coaching/family-vision-planning" element={<FamilyVisionPlanning />} />
+      <Route path="/coaching/independent-play-development" element={<IndependentPlayDevelopment />} />
+      <Route path="/coaching/behaviour-emotional-regulation" element={<BehaviourEmotionalRegulation />} />
+      <Route path="/coaching/parental-burnout-reset" element={<ParentalBurnoutReset />} />
       <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/admin/login" element={<AdminLogin />} />
