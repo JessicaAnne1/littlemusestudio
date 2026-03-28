@@ -22,7 +22,7 @@ export const handler: Handler = async (event) => {
     return { statusCode: 400, body: JSON.stringify({ message: "Email is required." }) };
   }
 
-  const apiKey = process.env.VITE_KIT_API_KEY;
+  const apiKey = process.env.KIT_API_SECRET;
   if (!apiKey) {
     return { statusCode: 500, body: JSON.stringify({ message: "Server misconfiguration: missing API key." }) };
   }
