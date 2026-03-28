@@ -6,24 +6,29 @@ import founderPhoto from "@/assets/founder-photo.jpg";
 const MeetTheFounder = () => {
   return (
     <Layout>
-      <section className="container mx-auto px-6 pt-16 pb-10 text-center">
-        <p className="font-body text-xs uppercase tracking-[0.25em] text-primary mb-3">
-          The Heart Behind The Studio
-        </p>
-        <h1 className="font-display text-4xl md:text-5xl font-semibold text-foreground mb-4">
-          Meet The Founder
-        </h1>
+      <section className="gradient-hero">
+        <div className="container mx-auto px-6 pt-20 pb-16 text-center max-w-2xl">
+          <p className="font-body text-xs uppercase tracking-[0.25em] text-primary mb-4">
+            The Heart Behind The Studio
+          </p>
+          <h1 className="font-display text-4xl md:text-5xl font-semibold text-foreground mb-6">
+            Meet The Founder
+          </h1>
+          <p className="font-body text-base text-muted-foreground leading-relaxed max-w-xl mx-auto">
+            Strategist, mother, and intentional parenting advocate — Jessica O'Donnell brings together professional expertise and lived experience to support families who want to parent with purpose.
+          </p>
+        </div>
       </section>
 
       <section className="container mx-auto px-6 pb-20">
         <div className="max-w-3xl mx-auto">
           {/* Founder photo + intro text side by side */}
           <div className="flex flex-col md:flex-row gap-8 mb-10">
-            <div className="md:w-1/3 flex-shrink-0">
+            <div className="md:w-2/5 flex-shrink-0">
               <img
                 src={founderPhoto}
                 alt="Jessica — founder of Little Muse Studio"
-                className="w-full h-auto object-cover rounded-2xl"
+                className="w-full h-auto object-cover rounded-[15px] card-hover"
               />
             </div>
             <div className="md:w-2/3 space-y-6 font-body text-base text-muted-foreground leading-relaxed">
@@ -56,7 +61,7 @@ const MeetTheFounder = () => {
 
             <p>
               A significant amount of my lived experience comes from raising a
-              beautiful neurodivergent child who is now 21 and thriving. That
+              beautiful neurodivergent child who is now a thriving young adult. That
               journey — along with years of professional training — shaped my
               deep commitment to supporting families with compassion, structure,
               and understanding.
@@ -81,14 +86,13 @@ const MeetTheFounder = () => {
               inform the resources and products I create:
             </p>
 
-            <ul className="list-disc list-inside space-y-1.5 pl-2">
-              <li>Certified Life Coach</li>
-              <li>Certified Neuroscience Coach</li>
-              <li>Certified Positive Psychology Coach</li>
-              <li>Certified ADHD Coach</li>
-              <li>Certified Autism Coach</li>
-              <li>Certified Positive Parenting Coach</li>
-              <li>Certified Therapeutic Arts &amp; Art Life Coach</li>
+            <ul className="mt-3 card-lifted rounded-[15px] px-6 py-5 space-y-2">
+              <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" /><span className="font-body text-sm text-foreground leading-relaxed">Certified Life Coach</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" /><span className="font-body text-sm text-foreground leading-relaxed">Certified Neuroscience Coach</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" /><span className="font-body text-sm text-foreground leading-relaxed">Certified Positive Psychology Coach</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" /><span className="font-body text-sm text-foreground leading-relaxed">Certified ADHD Coach</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" /><span className="font-body text-sm text-foreground leading-relaxed">Certified Autism Coach</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" /><span className="font-body text-sm text-foreground leading-relaxed">Certified Positive Parenting Coach</span></li>
             </ul>
 
             <h2 className="font-display text-2xl font-semibold text-foreground pt-4">
@@ -97,10 +101,10 @@ const MeetTheFounder = () => {
 
             <p>My certifications are held and accredited with:</p>
 
-            <ul className="list-disc list-inside space-y-1.5 pl-2">
-              <li>International Practitioners of Holistic Medicine</li>
-              <li>Complementary Medicine Association</li>
-              <li>International Compliance Assurance for Holistic Practitioners</li>
+            <ul className="mt-3 card-lifted rounded-[15px] px-6 py-5 space-y-2">
+              <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" /><span className="font-body text-sm text-foreground leading-relaxed">International Practitioners of Holistic Medicine</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" /><span className="font-body text-sm text-foreground leading-relaxed">Complementary Medicine Association</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" /><span className="font-body text-sm text-foreground leading-relaxed">International Compliance Assurance for Holistic Practitioners</span></li>
             </ul>
 
             <h2 className="font-display text-2xl font-semibold text-foreground pt-4">
@@ -140,13 +144,13 @@ const MeetTheFounder = () => {
           <div className="mt-12 flex flex-wrap gap-4">
             <Link
               to="/coaching"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-body text-sm font-medium hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-[15px] font-body text-sm font-medium hover:opacity-90 transition-opacity"
             >
               Explore Coaching <ArrowRight size={16} />
             </Link>
             <Link
               to="/shop"
-              className="inline-flex items-center gap-2 bg-card text-foreground px-6 py-3 rounded-full font-body text-sm font-medium hover:bg-muted transition-colors"
+              className="inline-flex items-center gap-2 border border-primary text-primary bg-transparent px-6 py-3 rounded-[15px] font-body text-sm font-medium hover:bg-primary/5 transition-colors"
             >
               Browse The Shop
             </Link>

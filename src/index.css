@@ -103,4 +103,56 @@
   .font-body {
     font-family: 'DM Sans', sans-serif;
   }
+
+  .card-lifted {
+    background-color: hsl(var(--background));
+    border: 1px solid hsl(var(--border));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .card-hover {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .card-hover:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.10);
+    transform: translateY(-2px);
+  }
+
+  .btn-transition {
+    transition: opacity 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .btn-transition:hover {
+    opacity: 0.88;
+  }
+
+  .section-gap {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .gradient-hero {
+    background: linear-gradient(to bottom, hsl(3 49% 84% / 0.5), hsl(3 49% 84% / 0));
+  }
+
+  .gradient-cta {
+    background: linear-gradient(to bottom right, hsl(111 11% 68% / 0.25), hsl(111 11% 68% / 0.08));
+  }
+
+  .gradient-card {
+    background: linear-gradient(to bottom, hsl(31 33% 85% / 0.9), hsl(31 33% 85% / 0.4));
+  }
+
+  .gradient-accent {
+    background: linear-gradient(to bottom, hsl(206 22% 77% / 0.4), hsl(206 22% 77% / 0));
+  }
+
+  .bg-sage {
+    background: linear-gradient(to bottom right, hsl(var(--primary) / 0.5), hsl(var(--primary) / 0.25));
+  }
+
+  .bg-accent {
+    background: linear-gradient(to bottom right, hsl(var(--accent) / 0.6), hsl(var(--accent) / 0.3));
+  }
 }

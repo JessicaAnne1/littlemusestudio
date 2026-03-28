@@ -8,7 +8,7 @@ const ParentalBurnoutReset = () => {
   return (
     <Layout>
       {/* SECTION 1 — Hero */}
-      <section className="bg-card">
+      <section className="gradient-hero">
         <div className="container mx-auto px-6 py-20 md:py-28 text-center max-w-3xl">
           <h1 className="font-display text-4xl md:text-5xl font-semibold text-foreground mb-6">
             Parental Burnout &amp; Overwhelm Reset
@@ -29,7 +29,7 @@ const ParentalBurnoutReset = () => {
       </section>
 
       {/* SECTION 2 — When It Starts to Feel Like Too Much */}
-      <section className="container mx-auto px-6 py-20 max-w-3xl">
+      <section className="container mx-auto px-6 py-10 max-w-3xl">
         <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-8">
           When It Starts to Feel Like Too Much
         </h2>
@@ -41,7 +41,7 @@ const ParentalBurnoutReset = () => {
           </p>
           <p>And eventually, it can feel like:</p>
         </div>
-        <ul className="mt-5 space-y-3">
+        <ul className="mt-5 card-lifted card-hover rounded-[15px] px-6 py-5 space-y-3">
           {[
             "There is no space to pause",
             "You are always one step behind",
@@ -51,9 +51,7 @@ const ParentalBurnoutReset = () => {
           ].map((item) => (
             <li key={item} className="flex items-start gap-3">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-              <span className="font-body text-base text-muted-foreground leading-relaxed">
-                {item}
-              </span>
+              <span className="font-body text-sm text-foreground leading-relaxed">{item}</span>
             </li>
           ))}
         </ul>
@@ -64,8 +62,8 @@ const ParentalBurnoutReset = () => {
       </section>
 
       {/* SECTION 3 — What This Coaching Supports */}
-      <section className="bg-secondary">
-        <div className="container mx-auto px-6 py-20 max-w-3xl">
+      <section>
+        <div className="container mx-auto px-6 py-10 max-w-3xl">
           <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
             What This Coaching Supports
           </h2>
@@ -76,7 +74,7 @@ const ParentalBurnoutReset = () => {
               is directly shaped by your capacity. Together, we work on:
             </p>
           </div>
-          <ul className="mt-5 space-y-3">
+          <ul className="mt-5 card-lifted card-hover rounded-[15px] px-6 py-5 space-y-3">
             {[
               "Reducing mental load and decision fatigue",
               "Simplifying routines and expectations",
@@ -86,9 +84,7 @@ const ParentalBurnoutReset = () => {
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                <span className="font-body text-base text-muted-foreground leading-relaxed">
-                  {item}
-                </span>
+                <span className="font-body text-sm text-foreground leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>
@@ -100,8 +96,8 @@ const ParentalBurnoutReset = () => {
       </section>
 
       {/* SECTION 4 — Grounded in a Clear Framework */}
-      <section className="bg-card">
-        <div className="container mx-auto px-6 py-20 max-w-3xl">
+      <section>
+        <div className="container mx-auto px-6 py-10 max-w-3xl">
           <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Grounded in a Clear Framework
           </h2>
@@ -111,7 +107,7 @@ const ParentalBurnoutReset = () => {
               Because parenting sustainably requires:
             </p>
           </div>
-          <ul className="mt-5 space-y-3">
+          <ul className="mt-5 card-lifted card-hover rounded-[15px] px-6 py-5 space-y-3">
             {[
               "Boundaries — not just for children, but for yourself",
               "Emotional awareness — recognising when capacity is low",
@@ -121,9 +117,7 @@ const ParentalBurnoutReset = () => {
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                <span className="font-body text-base text-muted-foreground leading-relaxed">
-                  {item}
-                </span>
+                <span className="font-body text-sm text-foreground leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>
@@ -143,14 +137,14 @@ const ParentalBurnoutReset = () => {
       </section>
 
       {/* SECTION 5 — Creating Space to Reset */}
-      <section className="container mx-auto px-6 py-20 max-w-3xl">
+      <section className="container mx-auto px-6 py-10 max-w-3xl">
         <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
           Creating Space to Reset
         </h2>
         <div className="space-y-5 font-body text-base text-muted-foreground leading-relaxed">
           <p>Burnout does not resolve through pushing through. It resolves through:</p>
         </div>
-        <ul className="mt-5 space-y-3">
+        <ul className="mt-5 card-lifted card-hover rounded-[15px] px-6 py-5 space-y-3">
           {[
             "Reducing unnecessary pressure",
             "Creating systems that support you",
@@ -159,9 +153,7 @@ const ParentalBurnoutReset = () => {
           ].map((item) => (
             <li key={item} className="flex items-start gap-3">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-              <span className="font-body text-base text-muted-foreground leading-relaxed">
-                {item}
-              </span>
+              <span className="font-body text-sm text-foreground leading-relaxed">{item}</span>
             </li>
           ))}
         </ul>
@@ -171,8 +163,8 @@ const ParentalBurnoutReset = () => {
       </section>
 
       {/* SECTION 6 — How We Work Together */}
-      <section className="bg-secondary">
-        <div className="container mx-auto px-6 py-20 max-w-3xl">
+      <section>
+        <div className="container mx-auto px-6 py-10 max-w-3xl">
           <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
             How We Work Together
           </h2>
@@ -185,7 +177,7 @@ const ParentalBurnoutReset = () => {
             </p>
             <p>You will leave with:</p>
           </div>
-          <ul className="mt-5 space-y-3">
+          <ul className="mt-5 card-lifted card-hover rounded-[15px] px-6 py-5 space-y-3">
             {[
               "Clearer priorities",
               "Simplified systems and routines",
@@ -194,9 +186,7 @@ const ParentalBurnoutReset = () => {
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                <span className="font-body text-base text-muted-foreground leading-relaxed">
-                  {item}
-                </span>
+                <span className="font-body text-sm text-foreground leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>
@@ -204,15 +194,15 @@ const ParentalBurnoutReset = () => {
       </section>
 
       {/* SECTION 7 — Who This Is For */}
-      <section className="bg-card">
-        <div className="container mx-auto px-6 py-20 max-w-3xl">
+      <section>
+        <div className="container mx-auto px-6 py-10 max-w-3xl">
           <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Who This Is For
           </h2>
           <p className="font-body text-base text-muted-foreground leading-relaxed mb-5">
             This coaching is suited to parents who:
           </p>
-          <ul className="space-y-3">
+          <ul className="mt-5 card-lifted card-hover rounded-[15px] px-6 py-5 space-y-3">
             {[
               "Feel overwhelmed by the day-to-day demands of parenting",
               "Are experiencing mental load and decision fatigue",
@@ -222,9 +212,7 @@ const ParentalBurnoutReset = () => {
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                <span className="font-body text-base text-muted-foreground leading-relaxed">
-                  {item}
-                </span>
+                <span className="font-body text-sm text-foreground leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>
@@ -232,8 +220,8 @@ const ParentalBurnoutReset = () => {
       </section>
 
       {/* SECTION 8 — Final CTA */}
-      <section className="bg-secondary">
-        <div className="container mx-auto px-6 py-20 text-center max-w-2xl">
+      <section className="container mx-auto px-6 py-10">
+        <div className="gradient-cta rounded-[15px] p-10 md:p-14 text-center max-w-3xl mx-auto">
           <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
             Book a Discovery Call
           </h2>
@@ -254,26 +242,28 @@ const ParentalBurnoutReset = () => {
       </section>
 
       {/* SECTION 9 — While You're Here */}
-      <section className="container mx-auto px-6 py-20 text-center max-w-2xl">
-        <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
-          While You're Here
-        </h2>
-        <p className="font-body text-base text-muted-foreground leading-relaxed mb-8">
-          Explore practical tools and resources to support your family at home.
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link
-            to="/shop"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-[15px] font-body text-sm font-medium hover:opacity-90 transition-opacity"
-          >
-            Browse the Shop <ArrowRight size={16} />
-          </Link>
-          <Link
-            to="/blog"
-            className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 rounded-[15px] font-body text-sm font-medium hover:bg-primary/5 transition-colors"
-          >
-            Read the Journal <ArrowRight size={16} />
-          </Link>
+      <section className="gradient-accent py-10">
+        <div className="container mx-auto px-6 text-center max-w-2xl mx-auto">
+          <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
+            While You're Here
+          </h2>
+          <p className="font-body text-base text-muted-foreground leading-relaxed mb-8">
+            Explore practical tools and resources to support your family at home.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              to="/shop"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-[15px] font-body text-sm font-medium hover:opacity-90 transition-opacity"
+            >
+              Browse the Shop <ArrowRight size={16} />
+            </Link>
+            <Link
+              to="/blog"
+              className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 rounded-[15px] font-body text-sm font-medium hover:bg-primary/5 transition-colors"
+            >
+              Read the Journal <ArrowRight size={16} />
+            </Link>
+          </div>
         </div>
       </section>
     </Layout>

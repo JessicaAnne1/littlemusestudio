@@ -68,7 +68,7 @@ const ParentingWithBoundaries = () => {
   return (
     <Layout>
       {/* SECTION 1 — Hero */}
-      <section className="bg-card">
+      <section className="gradient-hero">
         <div className="container mx-auto px-6 py-20 md:py-28 text-center max-w-3xl">
           <h1 className="font-display text-4xl md:text-5xl font-semibold text-foreground mb-6">
             Parenting With Boundaries
@@ -89,7 +89,7 @@ const ParentingWithBoundaries = () => {
       </section>
 
       {/* SECTION 2 — Intro */}
-      <section className="container mx-auto px-6 py-20 max-w-3xl">
+      <section className="container mx-auto px-6 py-10 max-w-3xl">
         <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-8 text-center">
           Raising Children With Clarity, Confidence, and Calm
         </h2>
@@ -114,7 +114,7 @@ const ParentingWithBoundaries = () => {
             is about something far more important.
           </p>
         </div>
-        <blockquote className="mt-10 border-l-4 border-primary pl-6">
+        <blockquote className="mt-10 gradient-card card-hover rounded-[15px] px-8 py-8 border-l-4 border-primary">
           <p className="font-display text-lg text-foreground leading-relaxed italic">
             "We don't parent for the moment. We parent for the adult our child
             will become — ensuring that the wounds they carry into adulthood are
@@ -124,8 +124,8 @@ const ParentingWithBoundaries = () => {
       </section>
 
       {/* SECTION 3 — Framework Intro */}
-      <section className="bg-secondary">
-        <div className="container mx-auto px-6 py-20 max-w-3xl text-center">
+      <section>
+        <div className="container mx-auto px-6 py-10 max-w-3xl text-center">
           <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
             A Framework Designed for Real Families
           </h2>
@@ -143,7 +143,7 @@ const ParentingWithBoundaries = () => {
             </p>
             <p>Each pillar works together as part of a whole system. A system that helps you:</p>
           </div>
-          <ul className="mt-5 space-y-3 text-left">
+          <ul className="mt-5 card-lifted card-hover rounded-[15px] px-6 py-5 space-y-3 text-left">
             {[
               "Set clear boundaries without guilt",
               "Support emotional expression without losing structure",
@@ -153,9 +153,7 @@ const ParentingWithBoundaries = () => {
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                <span className="font-body text-base text-muted-foreground leading-relaxed">
-                  {item}
-                </span>
+                <span className="font-body text-sm text-foreground leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>
@@ -167,7 +165,7 @@ const ParentingWithBoundaries = () => {
       </section>
 
       {/* SECTION 4 — The Eight Pillars */}
-      <section className="container mx-auto px-6 py-20 max-w-4xl">
+      <section className="container mx-auto px-6 py-10 max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
             The Eight Pillars of Intentional Parenting
@@ -181,7 +179,7 @@ const ParentingWithBoundaries = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {pillars.map((pillar) => (
-            <div key={pillar.title} className="bg-card rounded-[15px] p-7">
+            <div key={pillar.title} className="gradient-card card-hover rounded-[15px] p-6 flex flex-col items-center justify-center text-center min-h-[96px]">
               <h3 className="font-display text-lg font-semibold text-foreground mb-2">
                 {pillar.title}
               </h3>
@@ -194,8 +192,8 @@ const ParentingWithBoundaries = () => {
       </section>
 
       {/* SECTION 5 — How the Pillars Work Together */}
-      <section className="bg-card">
-        <div className="container mx-auto px-6 py-20 max-w-3xl text-center">
+      <section>
+        <div className="container mx-auto px-6 py-10 max-w-3xl text-center">
           <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
             How the Pillars Work Together
           </h2>
@@ -206,7 +204,7 @@ const ParentingWithBoundaries = () => {
               home environment becomes more predictable and calm.
             </p>
           </div>
-          <ul className="mt-6 space-y-3 text-left">
+          <ul className="mt-6 card-lifted card-hover rounded-[15px] px-6 py-5 space-y-3 text-left">
             {[
               "Understand expectations",
               "Take responsibility for their actions",
@@ -216,9 +214,7 @@ const ParentingWithBoundaries = () => {
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                <span className="font-body text-base text-muted-foreground leading-relaxed">
-                  {item}
-                </span>
+                <span className="font-body text-sm text-foreground leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>
@@ -230,8 +226,8 @@ const ParentingWithBoundaries = () => {
       </section>
 
       {/* SECTION 6 — The Family Framework */}
-      <section className="bg-secondary">
-        <div className="container mx-auto px-6 py-20 max-w-4xl">
+      <section>
+        <div className="container mx-auto px-6 py-10 max-w-4xl">
           <div className="text-center mb-10">
             <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
               Bringing the Framework Into Everyday Life
@@ -245,7 +241,7 @@ const ParentingWithBoundaries = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {frameworkLayers.map((layer) => (
-              <div key={layer.title} className="bg-background rounded-[15px] p-7">
+              <div key={layer.title} className="card-lifted card-hover rounded-[15px] p-6 flex flex-col">
                 <h3 className="font-display text-lg font-semibold text-foreground mb-3">
                   {layer.title}
                 </h3>
@@ -259,7 +255,7 @@ const ParentingWithBoundaries = () => {
       </section>
 
       {/* SECTION 7 — The 8 Pillars Program */}
-      <section className="container mx-auto px-6 py-20 max-w-3xl text-center">
+      <section className="container mx-auto px-6 py-10 max-w-3xl text-center">
         <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
           The 8 Pillars Program
         </h2>
@@ -272,7 +268,7 @@ const ParentingWithBoundaries = () => {
           </p>
           <p>Through this process, you will:</p>
         </div>
-        <ul className="mt-5 space-y-3 text-left">
+        <ul className="mt-5 card-lifted card-hover rounded-[15px] px-6 py-5 space-y-3 text-left">
           {[
             "Understand how each pillar applies to your family",
             "Learn how to set and hold boundaries with clarity",
@@ -282,9 +278,7 @@ const ParentingWithBoundaries = () => {
           ].map((item) => (
             <li key={item} className="flex items-start gap-3">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-              <span className="font-body text-base text-muted-foreground leading-relaxed">
-                {item}
-              </span>
+              <span className="font-body text-sm text-foreground leading-relaxed">{item}</span>
             </li>
           ))}
         </ul>
@@ -295,8 +289,8 @@ const ParentingWithBoundaries = () => {
       </section>
 
       {/* SECTION 8 — Final CTA */}
-      <section className="bg-secondary">
-        <div className="container mx-auto px-6 py-20 text-center max-w-2xl">
+      <section className="container mx-auto px-6 py-10">
+        <div className="gradient-cta rounded-[15px] p-10 md:p-14 text-center max-w-3xl mx-auto">
           <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
             Start With a Conversation
           </h2>
@@ -318,26 +312,28 @@ const ParentingWithBoundaries = () => {
       </section>
 
       {/* SECTION 9 — While You're Here */}
-      <section className="container mx-auto px-6 py-20 text-center max-w-2xl">
-        <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
-          While You're Here
-        </h2>
-        <p className="font-body text-base text-muted-foreground leading-relaxed mb-8">
-          Explore practical tools and resources to support your family at home.
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link
-            to="/shop"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-[15px] font-body text-sm font-medium hover:opacity-90 transition-opacity"
-          >
-            Browse the Shop <ArrowRight size={16} />
-          </Link>
-          <Link
-            to="/blog"
-            className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 rounded-[15px] font-body text-sm font-medium hover:bg-primary/5 transition-colors"
-          >
-            Read the Journal <ArrowRight size={16} />
-          </Link>
+      <section className="gradient-accent py-10">
+        <div className="container mx-auto px-6 text-center max-w-2xl mx-auto">
+          <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
+            While You're Here
+          </h2>
+          <p className="font-body text-base text-muted-foreground leading-relaxed mb-8">
+            Explore practical tools and resources to support your family at home.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              to="/shop"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-[15px] font-body text-sm font-medium hover:opacity-90 transition-opacity"
+            >
+              Browse the Shop <ArrowRight size={16} />
+            </Link>
+            <Link
+              to="/blog"
+              className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 rounded-[15px] font-body text-sm font-medium hover:bg-primary/5 transition-colors"
+            >
+              Read the Journal <ArrowRight size={16} />
+            </Link>
+          </div>
         </div>
       </section>
     </Layout>

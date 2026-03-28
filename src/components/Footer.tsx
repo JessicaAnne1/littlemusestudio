@@ -3,7 +3,8 @@ import NewsletterSignup from "@/components/NewsletterSignup";
 
 const Footer = () => {
   return (
-    <footer className="bg-card border-t border-border">
+    <footer style={{background: "linear-gradient(to bottom, hsl(36 33% 96% / 0.3), hsl(31 33% 85% / 1))"}}>
+
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>

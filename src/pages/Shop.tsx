@@ -47,20 +47,19 @@ const Shop = () => {
 
   return (
     <Layout>
-      <section className="container mx-auto px-6 pt-16 pb-10 text-center">
+      <section className="gradient-hero"><div className="container mx-auto px-6 pt-16 pb-10 text-center">
         <p className="font-body text-xs uppercase tracking-[0.25em] text-primary mb-3">
           The Studio Edit
         </p>
         <h1 className="font-display text-4xl md:text-5xl font-semibold text-foreground mb-4">
-          Shop
+          Thoughtfully Curated, Intentionally Made
         </h1>
         <p className="font-body text-base text-muted-foreground max-w-md mx-auto">
-          Every piece is hand-picked for safety, beauty, and developmental value.
-          Designed for babies &amp; under-fives.
+          Montessori-inspired toys, sensory play essentials, and beautiful resources for families who value purposeful, developmental play.
         </p>
-      </section>
+      </div></section>
 
-      <section className="container mx-auto px-6 pb-20">
+      <section className="container mx-auto px-6 pt-10 pb-20">
         {loading ? (
           <div className="flex justify-center py-20">
             <Loader2 className="h-8 w-8 animate-spin text-primary" />
@@ -81,7 +80,7 @@ const Shop = () => {
                 <Link
                   to={`/product/${product.node.handle}`}
                   key={product.node.id}
-                  className="group bg-card rounded-2xl overflow-hidden border border-border hover:shadow-lg transition-shadow duration-300 animate-fade-in"
+                  className="group gradient-card card-hover rounded-[15px] overflow-hidden border border-border animate-fade-in"
                   style={{ animationDelay: `${i * 0.08}s` }}
                 >
                   <div className="aspect-square flex items-center justify-center relative overflow-hidden" style={{ backgroundColor: '#FAF7F2' }}>
@@ -103,7 +102,7 @@ const Shop = () => {
                       {isLoading ? <Loader2 size={16} className="animate-spin" /> : <ShoppingBag size={16} />}
                     </button>
                   </div>
-                  <div className="p-5">
+                  <div className="p-5" style={{background: "linear-gradient(to bottom, hsl(31 33% 85% / 0.3), hsl(31 33% 85% / 0.7))"}}>
                     <h3 className="font-display text-base font-semibold text-foreground mt-1 mb-1 leading-snug">
                       {product.node.title}
                     </h3>

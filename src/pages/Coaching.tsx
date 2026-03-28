@@ -117,7 +117,7 @@ const Coaching = () => {
   return (
     <Layout>
       {/* SECTION 1 — Hero */}
-      <section className="bg-card">
+      <section className="gradient-hero">
         <div className="container mx-auto px-6 py-20 md:py-28 text-center max-w-3xl">
           <h1 className="font-display text-5xl md:text-6xl font-semibold text-foreground mb-6">
             Parenting With Clarity, Boundaries, And Intention.
@@ -146,7 +146,7 @@ const Coaching = () => {
           {pillars.map((pillar) => (
             <div
               key={pillar}
-              className="bg-secondary rounded-[15px] h-24 flex items-center justify-center px-4 text-center"
+              className="card-lifted card-hover rounded-[15px] h-24 flex items-center justify-center px-4 text-center"
             >
               <p className="font-display text-sm font-semibold text-foreground leading-snug">
                 {pillar}
@@ -167,7 +167,7 @@ const Coaching = () => {
       </section>
 
       {/* SECTION 3 — Targeted Coaching Support */}
-      <section className="bg-card">
+      <section>
         <div className="container mx-auto px-6 py-20 max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
@@ -184,7 +184,7 @@ const Coaching = () => {
             {services.map((service) => (
               <div
                 key={service.title}
-                className={`${service.bg} rounded-[15px] p-7 flex flex-col hover:shadow-lg transition-shadow duration-300`}
+                className={`${service.bg} card-hover rounded-[15px] p-7 flex flex-col opacity-90`}
               >
                 <h3 className="font-display text-lg font-semibold text-foreground mb-2">
                   {service.title}
@@ -237,7 +237,7 @@ const Coaching = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {safeties.map((safety) => (
-            <div key={safety.title} className="bg-secondary rounded-2xl p-7">
+            <div key={safety.title} className="card-lifted card-hover rounded-[15px] p-7">
               <h3 className="font-display text-lg font-semibold text-foreground mb-3">
                 {safety.title}
               </h3>
@@ -258,7 +258,7 @@ const Coaching = () => {
       </section>
 
       {/* SECTION 5 — Resources to Support You at Home */}
-      <section className="bg-accent">
+      <section>
         <div className="container mx-auto px-6 py-20 text-center max-w-2xl">
           <p className="font-body text-xs uppercase tracking-[0.25em] text-primary mb-3">
             Resources
@@ -275,13 +275,13 @@ const Coaching = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               to="/shop"
-              className="inline-flex items-center gap-2 bg-foreground text-background border border-foreground px-6 py-3 rounded-[15px] font-body text-sm font-medium hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-[15px] font-body text-sm font-medium hover:opacity-90 transition-opacity"
             >
               Browse the Shop <ArrowRight size={16} />
             </Link>
             <Link
               to="/blog"
-              className="inline-flex items-center gap-2 bg-foreground text-background border border-foreground px-6 py-3 rounded-[15px] font-body text-sm font-medium hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-[15px] font-body text-sm font-medium hover:opacity-90 transition-opacity"
             >
               Read the Journal <ArrowRight size={16} />
             </Link>
@@ -291,7 +291,7 @@ const Coaching = () => {
 
       {/* SECTION 6 — Final CTA */}
       <section className="container mx-auto px-6 py-20">
-        <div className="bg-secondary rounded-2xl p-10 md:p-14 text-center max-w-2xl mx-auto">
+        <div className="gradient-cta rounded-[15px] p-10 md:p-14 text-center max-w-3xl mx-auto">
           <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-3">
             Ready to Get Started?
           </h2>

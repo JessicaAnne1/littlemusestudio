@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { format } from "date-fns";
 
-const colorCycle = ["bg-secondary", "bg-eucalyptus-light", "bg-accent", "bg-sand", "bg-secondary", "bg-eucalyptus-light"];
+const colorCycle = ["bg-secondary", "bg-accent", "bg-primary/20", "bg-card", "bg-secondary", "bg-accent"];
 
 const Blog = () => {
   const { data: posts, isLoading } = useQuery({
@@ -23,7 +23,7 @@ const Blog = () => {
   return (
     <Layout>
       {/* Header */}
-      <section className="container mx-auto px-6 pt-16 pb-10 text-center">
+      <section className="gradient-hero"><div className="container mx-auto px-6 pt-16 pb-10 text-center">
         <p className="font-body text-xs uppercase tracking-[0.25em] text-primary mb-3">
           The Journal
         </p>
@@ -33,7 +33,7 @@ const Blog = () => {
         <p className="font-body text-base text-muted-foreground max-w-md mx-auto">
           Intentional play inspiration, product guides, and the Little Muse approach to early childhood.
         </p>
-      </section>
+      </div></section>
 
       {/* Blog grid */}
       <section className="container mx-auto px-6 pb-20">
@@ -48,7 +48,7 @@ const Blog = () => {
             {posts.map((post, i) => (
               <article
                 key={post.id}
-                className="bg-card rounded-2xl overflow-hidden border border-border hover:shadow-lg transition-shadow duration-300 animate-fade-in flex flex-col"
+                className="gradient-card card-hover rounded-[15px] overflow-hidden border border-border animate-fade-in flex flex-col"
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
                 <div className={`${post.featured_image_url ? "" : colorCycle[i % colorCycle.length]} h-48 flex items-center justify-center overflow-hidden`}>
